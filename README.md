@@ -15,3 +15,4 @@ Pro ovládání jsou použita tlačítka:
 * **Reset** – Nastavení stopek do výchozího stavu. Paměti a čítače jsou vynulovány.
 * **Lap_save** – Uložení aktuálního času do vnitřní paměti.
 * **Lap_scroll** – Cyklické listování uloženými časy.
+* * **Mode** – Přepínaní mezi zobrazením aktuálního měřeného času a uloženými časy.
