@@ -26,7 +26,7 @@ entity debounce is
         clk         : in  std_logic;
         rst         : in  std_logic;
         btn_in      : in  std_logic;  -- Bouncey button input
-        btn_state   : out std_logic;  -- Debounced level
+      
         btn_press   : out std_logic   -- 1-clock press pulse
         -- btn_release : out std_logic   -- 1-clock release pulse
     );
@@ -119,10 +119,7 @@ begin
         end if;
     end process;
 
-    ----------------------------------------------------------------
-    -- Outputs
-    ----------------------------------------------------------------
-    btn_state <= debounced;
+ 
 
     -- One-clock pulse when button pressed and released
     btn_press   <= debounced and not(delayed);
