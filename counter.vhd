@@ -24,7 +24,7 @@ use ieee.numeric_std.all;  -- Package for data types conversion
 -------------------------------------------------
 
 entity counter is
-    generic ( G_BITS : positive := 3 );  --! Default number of bits
+    generic ( G_BITS : positive := 19 );  --! Default number of bits
     port (
         clk : in  std_logic;                             --! Main clock
         rst : in  std_logic;                             --! High-active synchronous reset
