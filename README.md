@@ -9,7 +9,7 @@ Cílem tohoto projektu je vytvořit návrh stopek s možností ukládání jedno
 K zobrazení aktuálně měřeného času slouží 8 sedmisegmentových displejů. Čas je zobrazen ve formátu `MM:SS:hh` (minuty:sekundy:setiny). Systém využívá dva režimy zobrazení:
 
 * **Režim aktuálního času** – Displej zobrazuje běžící čas.
-* **Režim historie** – Aktivuje se stiskem tlačítka `Lap_scroll`. Stopky na pozadí stále běží, ale displej zobrazuje uložený čas z paměti.
+* **Režim historie** – Aktivuje se stiskem tlačítka `Mode`. Stopky na pozadí stále běží, ale displej zobrazuje uložený čas z paměti.
 
 ## Vstupy
 Pro ovládání jsou použita tlačítka:
