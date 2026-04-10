@@ -2,7 +2,7 @@
 
 Cílem tohoto projektu je vytvořit návrh stopek s možností ukládání jednotlivých kol v jazyku VHDL a následně ho implementovat na vývojovou desku Nexys A7-50T.
 
-<img width="1816" height="871" alt="obrazek" src="https://github.com/user-attachments/assets/f01cbea6-c8e2-47b7-bd67-a4eec00d938d" />
+<img width="1816" height="871" alt="obrazek" src="https://github.com/user-attachments/assets/19a302cb-d5ce-459c-ac95-388bfb0c51d1" />
 
 
 ## Výstup
