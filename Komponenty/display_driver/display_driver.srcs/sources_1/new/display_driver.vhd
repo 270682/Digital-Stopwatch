@@ -7,7 +7,8 @@ entity display_driver is
            rst : in STD_LOGIC;
            data : in STD_LOGIC_VECTOR (23 downto 0);
            seg : out STD_LOGIC_VECTOR (6 downto 0);
-           an : out STD_LOGIC_VECTOR (5 downto 0));
+           an : out STD_LOGIC_VECTOR (5 downto 0);
+           dp : out STD_LOGIC);
 end display_driver;
 
 architecture Behavioral of display_driver is
@@ -101,13 +102,13 @@ begin
     p_anode_select : process (sig_digit) is
     begin
         case sig_digit is
-            when "000"  => an <= "111110"; -- Digit 0 on
-            when "001"  => an <= "111101"; -- Digit 1 on
-            when "010"  => an <= "111011"; -- Digit 2 on
-            when "011"  => an <= "110111"; -- Digit 3 on
-            when "100"  => an <= "101111"; -- Digit 4 on
-            when "101"  => an <= "011111"; -- Digit 5 on
-            when others => an <= "111111"; -- All off
+            when "000"  => an <= "111110"; dp <= 1; -- Digit 0 on
+            when "001"  => an <= "111101"; dp <= 1; -- Digit 1 on
+            when "010"  => an <= "111011"; dp <= 0; -- Digit 2 on
+            when "011"  => an <= "110111"; dp <= 1; -- Digit 3 on
+            when "100"  => an <= "101111"; dp <= 1; -- Digit 4 on
+            when "101"  => an <= "011111"; dp <= 0; -- Digit 5 on
+            when others => an <= "111111"; dp <= 1; -- All off
         end case;
     end process;
 
