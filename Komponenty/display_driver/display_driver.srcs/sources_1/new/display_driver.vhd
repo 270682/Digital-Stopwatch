@@ -99,16 +99,16 @@ begin
     ------------------------------------------------------------------------
     -- Anode select process
     ------------------------------------------------------------------------
-    p_anode_select : process (sig_digit) is
+ p_anode_select : process (sig_digit) is
     begin
         case sig_digit is
-            when "000"  => an <= "111110"; dp <= 1; -- Digit 0 on
-            when "001"  => an <= "111101"; dp <= 1; -- Digit 1 on
-            when "010"  => an <= "111011"; dp <= 0; -- Digit 2 on
-            when "011"  => an <= "110111"; dp <= 1; -- Digit 3 on
-            when "100"  => an <= "101111"; dp <= 1; -- Digit 4 on
-            when "101"  => an <= "011111"; dp <= 0; -- Digit 5 on
-            when others => an <= "111111"; dp <= 1; -- All off
+            when "000"  => an <= "111110"; dp <= '1'; -- Digit 0 on
+            when "001"  => an <= "111101"; dp <= '1'; -- Digit 1 on
+            when "010"  => an <= "111011"; dp <= '0'; -- Digit 2 on
+            when "011"  => an <= "110111"; dp <= '1'; -- Digit 3 on
+            when "100"  => an <= "101111"; dp <= '1'; -- Digit 4 on
+            when "101"  => an <= "011111"; dp <= '0'; -- Digit 5 on
+            when others => an <= "111111"; dp <= '1'; -- All off
         end case;
     end process;
 
