@@ -18,3 +18,6 @@ Pro ovládání jsou použita tlačítka:
 * **Lap_save** – Uložení aktuálního času do vnitřní paměti.
 * **Lap_scroll** – Cyklické listování uloženými časy.
 * **Mode** – Přepínaní mezi zobrazením aktuálního měřeného času a uloženými časy.
+
+## Funkční bloky
+### start_stop
