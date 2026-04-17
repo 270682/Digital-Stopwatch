@@ -19,5 +19,19 @@ Pro ovládání jsou použita tlačítka:
 * **Lap_scroll** – Cyklické listování uloženými časy.
 * **Mode** – Přepínaní mezi zobrazením aktuálního měřeného času a uloženými časy.
 
-## Funkční bloky
+## Vnitřní moduly
 ### start_stop
+<img width="1359" height="315" alt="obrazek" src="https://github.com/user-attachments/assets/514f5596-4925-4032-8b75-552bb7e3415c" />
+
+### time_decoder
+<img width="1500" height="204" alt="obrazek" src="https://github.com/user-attachments/assets/6a332282-73ce-488a-b542-8035ddb3cb98" />
+
+### lap_memory
+<img width="1795" height="458" alt="obrazek" src="https://github.com/user-attachments/assets/3eef0236-a818-489b-bded-424167dfb48e" />
+
+### view_mode
+<img width="1502" height="386" alt="obrazek" src="https://github.com/user-attachments/assets/8d8c0d5b-eeec-40cb-ac6a-d87efe1c42c1" />
+
+### display_driver
+<img width="1779" height="329" alt="obrazek" src="https://github.com/user-attachments/assets/0ff21f1d-08c3-4232-85af-ce8d9465d21e" />
+
