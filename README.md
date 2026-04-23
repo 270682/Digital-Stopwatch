@@ -38,7 +38,7 @@ Modul slouží jako úložiště, které umožňuje uživateli zachytit a uchova
 
 <img width="1795" height="458" alt="obrazek" src="https://github.com/user-attachments/assets/3eef0236-a818-489b-bded-424167dfb48e" />
 
-### view_mode
+### [view:mode] (https://github.com/270682/Digital-Stopwatch/tree/main/Komponenty/view_mode)
 
 Tento modul funguje jako přepínač (multiplexer), který určuje zdroj dat pro zobrazení na displeji. Umožňuje uživateli volit mezi sledováním aktuálně běžícího času a prohlížením uložených časů. Ovladán je stiskem tlačítka. Při zaznamenání impulzu přepne mezi jedním nebo druhým zdrojem dat na vstupu, který zrcadlí na výstup.
 
