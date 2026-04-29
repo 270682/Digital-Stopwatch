@@ -48,7 +48,7 @@ Tento modul slouží jako převodník binární hodnoty času (v setinách) na z
 
 Modul slouží jako úložiště, které umožňuje uživateli zachytit a uchovat aktuální časy (kola) bez přerušení běhu hlavního čítače. Tato paměť disponuje osmi sloty o šířce 19 bitů. Vstupní impulz lap_save ukládá aktuální čas ze vstupu na pozici určenou vnitřním zapisovacím ukazatelem. Impulz lap_scroll umožňuje uživateli cyklicky listovat uloženými daty (používá se vnitřní ukazetel čtení). Při resetu dojde k úplnému vymazání paměťového pole i k vynulování obou ukazatelů. Modul je rozšířen o 8 bitový výstup pro LEDky, které slouží k vizuální indikaci aktuálního místa paměti, do kterého se zapisuje. Při procházení uložených časů tyto LEDky indikují místo v paměti, ze kterého se čte zobrazovaná hodnota. 
 
-<img width="1795" height="458" alt="obrazek" src="https://github.com/user-attachments/assets/3eef0236-a818-489b-bded-424167dfb48e" />
+<img width="1450" height="356" alt="obrazek" src="https://github.com/user-attachments/assets/59225088-88d4-486e-aaa9-fe137f9e2bc0" />
 
 ### [view_mode](https://github.com/270682/Digital-Stopwatch/tree/main/Komponenty/view_mode)
 
