@@ -2,14 +2,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL; -- Used for mathematic operations
 
-
 entity lap_memory is
-    Port ( clk : in STD_LOGIC;
-           rst : in STD_LOGIC;
-           lap_save : in STD_LOGIC;
-           lap_scroll : in STD_LOGIC;
-           data_in : in STD_LOGIC_VECTOR (18 downto 0);
-           data_out : out STD_LOGIC_VECTOR (18 downto 0));
+    Port ( clk        : in  STD_LOGIC;
+           rst        : in  STD_LOGIC;
+           lap_save   : in  STD_LOGIC;
+           lap_scroll : in  STD_LOGIC;
+           mode       : in  STD_LOGIC; 
+           data_in    : in  STD_LOGIC_VECTOR (18 downto 0);
+           data_out   : out STD_LOGIC_VECTOR (18 downto 0);
+           led_out    : out STD_LOGIC_VECTOR (7 downto 0));
 end lap_memory;
 
 architecture Behavioral of lap_memory is
@@ -27,6 +28,10 @@ architecture Behavioral of lap_memory is
     -- Signals for button press detection (to react only once per press)
     signal save_last   : std_logic := '0';
     signal scroll_last : std_logic := '0';
+    
+    -- Internal register to remember display mode (0 = Write/Live, 1 = Read/History)
+    signal display_mode_reg : std_logic := '0';
+    signal mode_last        : std_logic := '0';
 
 begin
 
@@ -40,7 +45,15 @@ process(clk)
                 lap_storage <= (others => (others => '0'));
                 save_last <= '0';
                 scroll_last <= '0';
+                display_mode_reg <= '0';
+                mode_last <= '0';
             else
+                -- Toggle display mode on mode button pulse
+                if mode = '1' and mode_last = '0' then
+                    display_mode_reg <= not display_mode_reg;
+                end if;
+                mode_last <= mode;
+
                 -- Save button action
                 if lap_save = '1' and save_last = '0' then
                     --Inserting value from data_in to memory cell adresed by write pointer
@@ -62,8 +75,18 @@ process(clk)
         end if;
     end process;
 
+    -- LED indicator logic: Show write pointer or read pointer based on mode
+    process(display_mode_reg, read_ptr, write_ptr)
+    begin
+        led_out <= (others => '0'); -- Default: all LEDs off
+        if display_mode_reg = '1' then
+            led_out(to_integer(read_ptr)) <= '1'; -- Show current read position
+        else
+            led_out(to_integer(write_ptr)) <= '1'; -- Show next write position
+        end if;
+    end process;
+
     -- Output the value currently selected by the read pointer
     data_out <= lap_storage(to_integer(read_ptr));
-
 
 end Behavioral;
