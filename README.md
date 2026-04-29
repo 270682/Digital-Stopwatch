@@ -5,7 +5,7 @@ Cílem tohoto projektu je vytvořit návrh stopek s možností ukládání jedno
 <img width="1816" height="871" alt="obrazek" src="https://github.com/user-attachments/assets/2ac0a2bb-1d30-4c8e-aa98-3106734ec444" />
 
 
-## Výstup
+## Výstupy
 K zobrazení aktuálně měřeného času slouží 8 sedmisegmentových displejů. Čas je zobrazen ve formátu `MM:SS:hh` (minuty:sekundy:setiny). Systém využívá dva režimy zobrazení:
 
 * **Režim aktuálního času** – Displej zobrazuje běžící čas.
