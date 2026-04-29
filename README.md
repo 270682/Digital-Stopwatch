@@ -9,7 +9,7 @@ K zobrazení aktuálně měřeného času slouží 8 sedmisegmentových displej�
 
 * **Režim aktuálního času** – Displej zobrazuje běžící čas.
 * **Režim historie** – Aktivuje se stiskem tlačítka `Mode`. Stopky na pozadí stále běží, ale displej zobrazuje uložený čas z paměti.
-### K pomocným výstupním indikací patří:
+### K pomocným výstupním indikacím patří:
 *  **Indikace zápisu** - Modrá LEDka na desce. Rozsvítí se při stisku tlačítka `Lap_save`.
 *  **Indikace aktuální adresy paměťového prostoru** - Řada LEDek na desce. Slouží k vizuální indikaci indexu paměťového pole. Svítící dioda (1 z 8) odpovídá buď pozici pro příští zápis, nebo pozici právě prohlíženého záznamu podle aktuálně zvoleného režimu zobrazení na displeji.
 
