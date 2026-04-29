@@ -17,11 +17,11 @@ K zobrazení aktuálně měřeného času slouží 8 sedmisegmentových displej�
 Pro ovládání jsou použita tlačítka:
 
 | Funkce | Tlačítko |
-| :---: | :---: | :---: |
+| :---: | :---: |
 | **Start/Stop** | BTNU (Up) |
-| **Reset** | BTND (Down) | 
-| **Lap_save** | BTNC (Center) | 
-| **Lap_scroll** | BTNR (Right) | 
+| **Reset** | BTND (Down) |
+| **Lap_save** | BTNC (Center) |
+| **Lap_scroll** | BTNR (Right) |
 | **Mode** | BTNL (Left) |
 
 * **Start/Stop** – Spuštění nebo zastavení stopek.
