@@ -2,7 +2,8 @@
 
 Cílem tohoto projektu je vytvořit návrh stopek s možností ukládání jednotlivých kol v jazyku VHDL a následně ho implementovat na vývojovou desku Nexys A7-50T.
 
-<img width="1816" height="871" alt="obrazek" src="https://github.com/user-attachments/assets/671a6f38-2cea-49fb-a71d-96446c89e216" />
+<img width="1816" height="871" alt="obrazek" src="https://github.com/user-attachments/assets/2ac0a2bb-1d30-4c8e-aa98-3106734ec444" />
+
 
 ## Výstup
 K zobrazení aktuálně měřeného času slouží 8 sedmisegmentových displejů. Čas je zobrazen ve formátu `MM:SS:hh` (minuty:sekundy:setiny). Systém využívá dva režimy zobrazení:
