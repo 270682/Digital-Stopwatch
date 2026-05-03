@@ -18,6 +18,15 @@ end stopwatch_top;
 
 architecture Behavioral of stopwatch_top is
 
+    component show_saved_time is
+        port ( clk : in STD_LOGIC;
+               data_in_cntr : in STD_LOGIC_VECTOR (18 downto 0);
+               save_btn : in STD_LOGIC;
+               data_in_view_mode : in STD_LOGIC_VECTOR (18 downto 0);
+               output : out STD_LOGIC_VECTOR (18 downto 0)
+               );
+    end component show_saved_time;
+
 -- Component declaration for clock enable
     component clk_en is
         generic ( G_MAX : positive );
@@ -110,6 +119,7 @@ architecture Behavioral of stopwatch_top is
     signal sig_mux_out : std_logic_vector(18 downto 0);
     signal sig_lap_memory : std_logic_vector(18 downto 0);
     signal sig_decoded : std_logic_vector(23 downto 0);
+    signal sig_show_saved : std_logic_vector(18 downto 0);
 
 begin
 
@@ -198,7 +208,7 @@ begin
          
         time_decoder_0 : time_decoder
         port map (         
-        data_in => sig_mux_out,
+        data_in => sig_show_saved,
         data_out => sig_decoded     
          );
 
@@ -214,6 +224,15 @@ begin
          );
          
          an(7 downto 6) <= "11";
+         
+         show_saved_time_0 : show_saved_time
+         port map (
+            clk => clk,
+            data_in_cntr => sig_cnt,
+            save_btn => sig_lap_save,
+            data_in_view_mode => sig_mux_out,
+            output => sig_show_saved
+            );
         
 
 end Behavioral;
