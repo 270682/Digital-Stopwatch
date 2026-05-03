@@ -61,3 +61,10 @@ Tento modul zajišťuje obsluhu šesti sedmisegmentových displejů. Protože js
 
 <img width="1779" height="329" alt="obrazek" src="https://github.com/user-attachments/assets/0ff21f1d-08c3-4232-85af-ce8d9465d21e" />
 
+### [show_saved_time](https://github.com/270682/Digital-Stopwatch/tree/main/show_saved_time) - [simulace](https://github.com/270682/Digital-Stopwatch/tree/main/show_saved_time)
+
+Funkce modulu spočívá v krátkém zobrazení uloženého času na 7segmentovém displeji. Tedy po zmáčknutí tlačítka pro uložení času se na displeji na dobu asi 1 vteřiny obejví poslední uložený čas.
+
+<img width="2072" height="672" alt="image" src="https://github.com/user-attachments/assets/ac13292f-8333-4b59-bde3-ef04fd90383d" />
+
+
