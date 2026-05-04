@@ -1,6 +1,6 @@
 # Digital-Stopwatch
 
-Cílem tohoto projektu je vytvořit návrh stopek s možností ukládání jednotlivých kol v jazyku VHDL a následně ho implementovat na vývojovou desku Nexys A7-50T.
+Cílem tohoto projektu je vytvořit návrh stopek s možností ukládání jednotlivých kol v jazyku VHDL a následně ho implementovat na vývojovou desku Nexys A7-50T. [Video](https://vutbr-my.sharepoint.com/:v:/g/personal/270682_vutbr_cz/IQCd643TSO6TQ7k1So4Kw4fsAdR6a18hS8zYQsgumOX-UwM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=aAraCd)
 
 <img width="1816" height="871" alt="obrazek" src="https://github.com/user-attachments/assets/cfcabc62-c12f-47b0-b0c7-aee51b7ea4a2" />
 
